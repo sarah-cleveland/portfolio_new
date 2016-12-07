@@ -1,0 +1,9 @@
+<div class="page-content">
+  <div *ngFor="let project of projects"
+    [class.selected]="project === selectedProject"
+    (click)="gotoDetail(project)">
+    <img src="/app/assets/images/{{project.image}}" alt={{project.title}} >
+    <h3>{{project.title}}</h3>
+    <p>{{project.content}}</p>
+  </div>
+</div>

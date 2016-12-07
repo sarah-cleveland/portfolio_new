@@ -1,0 +1,2195 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.2.4
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+   * 1. Set default font family to sans-serif.
+   * 2. Prevent iOS and IE text size adjust after device orientation change,
+   *    without disabling user zoom.
+   */
+/* line 13, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+   * Remove default margin.
+   */
+/* line 24, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+     ========================================================================== */
+/**
+   * Correct `block` display not defined for any HTML5 element in IE 8/9.
+   * Correct `block` display not defined for `details` or `summary` in IE 10/11
+   * and Firefox.
+   * Correct `block` display not defined for `main` in IE 11.
+   */
+/* line 35, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+   * 1. Correct `inline-block` display not defined in IE 8/9.
+   * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+   */
+/* line 54, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+   * Prevent modern browsers from displaying `audio` without controls.
+   * Remove excess height in iOS 5 devices.
+   */
+/* line 67, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+   * Address `[hidden]` styling not present in IE 8/9/10.
+   * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+   */
+/* line 75, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+     ========================================================================== */
+/**
+   * Remove the gray background color from active links in IE 10.
+   */
+/* line 84, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+a {
+  background-color: transparent; }
+
+/**
+   * Improve readability of focused elements when they are also in an
+   * active/hover state.
+   */
+/* line 91, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+   */
+/* line 100, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+   * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+   */
+/* line 106, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+   * Address styling not present in Safari and Chrome.
+   */
+/* line 113, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+dfn {
+  font-style: italic; }
+
+/**
+   * Address variable `h1` font-size and margin within `section` and `article`
+   * contexts in Firefox 4+, Safari, and Chrome.
+   */
+/* line 120, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+   * Address styling not present in IE 8/9.
+   */
+/* line 127, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+   * Address inconsistent and variable font size in all browsers.
+   */
+/* line 134, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+small {
+  font-size: 80%; }
+
+/**
+   * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+   */
+/* line 140, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 147, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+sup {
+  top: -0.5em; }
+
+/* line 150, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove border when inside `a` element in IE 8/9/10.
+   */
+/* line 158, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+img {
+  border: 0; }
+
+/**
+   * Correct overflow not hidden in IE 9/10/11.
+   */
+/* line 164, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * Address margin not present in IE 8/9 and Safari.
+   */
+/* line 172, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+figure {
+  margin: 1em 40px; }
+
+/**
+   * Address differences between Firefox and other browsers.
+   */
+/* line 178, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+   * Contain overflow in all browsers.
+   */
+/* line 185, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+pre {
+  overflow: auto; }
+
+/**
+   * Address odd `em`-unit font size rendering in all browsers.
+   */
+/* line 191, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+     ========================================================================== */
+/**
+   * Known limitation: by default, Chrome and Safari on OS X allow very limited
+   * styling of `select`, unless a `border` property is set.
+   */
+/**
+   * 1. Correct color not being inherited.
+   *    Known issue: affects color of disabled elements.
+   * 2. Correct font properties not being inherited.
+   * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+   */
+/* line 210, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+   * Address `overflow` set to `hidden` in IE 8/9/10/11.
+   */
+/* line 225, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+button {
+  overflow: visible; }
+
+/**
+   * Address inconsistent `text-transform` inheritance for `button` and `select`.
+   * All other form control elements do not inherit `text-transform` values.
+   * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+   * Correct `select` style inheritance in Firefox.
+   */
+/* line 234, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+button,
+select {
+  text-transform: none; }
+
+/**
+   * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+   *    and `video` controls.
+   * 2. Correct inability to style clickable `input` types in iOS.
+   * 3. Improve usability and consistency of cursor style between image-type
+   *    `input` and others.
+   */
+/* line 245, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+   * Re-set default cursor for disabled elements.
+   */
+/* line 257, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+button[disabled],
+html input[disabled] {
+  cursor: not-allowed; }
+
+/**
+   * Remove inner padding and border in Firefox 4+.
+   */
+/* line 264, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+   * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+   * the UA stylesheet.
+   */
+/* line 273, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+input {
+  line-height: normal; }
+
+/**
+   * It's recommended that you don't attempt to style these elements.
+   * Firefox's implementation doesn't respect box-sizing, padding, or width.
+   *
+   * 1. Address box sizing set to `content-box` in IE 8/9/10.
+   * 2. Remove excess padding in IE 8/9/10.
+   */
+/* line 283, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+   * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+   * `font-size` values of the `input`, it causes the cursor style of the
+   * decrement button to change from `default` to `text`.
+   */
+/* line 295, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+   * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+   * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+   */
+/* line 303, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+   * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+   * Safari (but not Chrome) clips the cancel button when the search input has
+   * padding (and `textfield` appearance).
+   */
+/* line 314, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+   * Define consistent border, margin, and padding.
+   * [NOTE] We don't enable this ruleset in Foundation, because we want the <fieldset> element to have plain styling.
+   */
+/* fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+  } */
+/**
+   * 1. Correct `color` not being inherited in IE 8/9/10/11.
+   * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+   */
+/* line 331, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+   * Remove default vertical scrollbar in IE 8/9/10/11.
+   */
+/* line 340, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+textarea {
+  overflow: auto; }
+
+/**
+   * Don't inherit the `font-weight` (applied by a rule above).
+   * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+   */
+/* line 347, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+     ========================================================================== */
+/**
+   * Remove most spacing between table cells.
+   */
+/* line 355, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 359, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+td,
+th {
+  padding: 0; }
+
+/* line 363, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.foundation-mq {
+  font-family: "small=0em&medium=40em&large=64em&xlarge=75em&xxlarge=90em"; }
+
+/* line 366, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+html {
+  font-size: 100%;
+  box-sizing: border-box; }
+
+/* line 370, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+/* line 375, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #0a0a0a;
+  background: #fefefe;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 386, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle; }
+
+/* line 393, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+textarea {
+  height: auto;
+  min-height: 50px;
+  border-radius: 3px; }
+
+/* line 398, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+select {
+  width: 100%;
+  border-radius: 3px; }
+
+/* line 402, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object,
+.mqa-display img,
+.mqa-display embed,
+.mqa-display object {
+  max-width: none !important; }
+
+/* line 413, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  line-height: 1; }
+
+/* line 421, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+[data-whatinput='mouse'] button {
+  outline: 0; }
+
+/* line 424, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.is-visible {
+  display: block !important; }
+
+/* line 427, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.is-hidden {
+  display: none !important; }
+
+/* line 430, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.float-left {
+  float: left !important; }
+
+/* line 433, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.float-right {
+  float: right !important; }
+
+/* line 436, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.float-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 441, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.clearfix::before, .clearfix::after {
+  content: ' ';
+  display: table;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-order: 1;
+  order: 1; }
+
+/* line 451, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.clearfix::after {
+  clear: both; }
+
+/* line 454, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hide {
+  display: none !important; }
+
+/* line 457, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.invisible {
+  visibility: hidden; }
+
+@media screen and (max-width: 39.9375em) {
+  /* line 461, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .hide-for-small-only {
+    display: none !important; } }
+
+@media screen and (max-width: 0em), screen and (min-width: 40em) {
+  /* line 465, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .show-for-small-only {
+    display: none !important; } }
+
+@media screen and (min-width: 40em) {
+  /* line 469, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .hide-for-medium {
+    display: none !important; } }
+
+@media screen and (max-width: 39.9375em) {
+  /* line 473, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .show-for-medium {
+    display: none !important; } }
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  /* line 477, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .hide-for-medium-only {
+    display: none !important; } }
+
+@media screen and (max-width: 39.9375em), screen and (min-width: 64em) {
+  /* line 481, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .show-for-medium-only {
+    display: none !important; } }
+
+@media screen and (min-width: 64em) {
+  /* line 485, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .hide-for-large {
+    display: none !important; } }
+
+@media screen and (max-width: 63.9375em) {
+  /* line 489, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .show-for-large {
+    display: none !important; } }
+
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+  /* line 493, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .hide-for-large-only {
+    display: none !important; } }
+
+@media screen and (max-width: 63.9375em), screen and (min-width: 75em) {
+  /* line 497, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .show-for-large-only {
+    display: none !important; } }
+
+/* line 500, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.show-for-sr,
+.show-on-focus {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0); }
+
+/* line 508, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.show-on-focus:active, .show-on-focus:focus {
+  position: static !important;
+  height: auto;
+  width: auto;
+  overflow: visible;
+  clip: auto; }
+
+/* line 515, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.show-for-landscape,
+.hide-for-portrait {
+  display: block !important; }
+
+@media screen and (orientation: landscape) {
+  /* line 519, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .show-for-landscape,
+  .hide-for-portrait {
+    display: block !important; } }
+
+@media screen and (orientation: portrait) {
+  /* line 523, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .show-for-landscape,
+  .hide-for-portrait {
+    display: none !important; } }
+
+/* line 527, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hide-for-landscape,
+.show-for-portrait {
+  display: none !important; }
+
+@media screen and (orientation: landscape) {
+  /* line 531, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .hide-for-landscape,
+  .show-for-portrait {
+    display: none !important; } }
+
+@media screen and (orientation: portrait) {
+  /* line 535, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .hide-for-landscape,
+  .show-for-portrait {
+    display: block !important; } }
+
+/* line 539, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.row {
+  max-width: 62.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+/* line 549, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.row .row {
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem; }
+
+/* line 552, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.row.expanded {
+  max-width: none; }
+
+/* line 554, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.row.collapse > .column, .row.collapse > .columns {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 557, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.row.is-collapse-child,
+.row.collapse > .column > .row,
+.row.collapse > .columns > .row {
+  margin-left: 0;
+  margin-right: 0; }
+
+/* line 563, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.column, .columns {
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0px;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  min-width: initial; }
+
+/* line 571, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.column.row.row, .row.row.columns {
+  float: none;
+  display: block; }
+
+/* line 575, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.row .column.row.row, .row .row.row.columns {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0; }
+
+/* line 581, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-1 {
+  -ms-flex: 0 0 8.33333%;
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%; }
+
+/* line 587, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-offset-0 {
+  margin-left: 0%; }
+
+/* line 590, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-2 {
+  -ms-flex: 0 0 16.66667%;
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%; }
+
+/* line 596, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-offset-1 {
+  margin-left: 8.33333%; }
+
+/* line 599, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%; }
+
+/* line 605, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-offset-2 {
+  margin-left: 16.66667%; }
+
+/* line 608, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-4 {
+  -ms-flex: 0 0 33.33333%;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%; }
+
+/* line 614, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-offset-3 {
+  margin-left: 25%; }
+
+/* line 617, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-5 {
+  -ms-flex: 0 0 41.66667%;
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%; }
+
+/* line 623, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-offset-4 {
+  margin-left: 33.33333%; }
+
+/* line 626, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+/* line 632, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-offset-5 {
+  margin-left: 41.66667%; }
+
+/* line 635, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-7 {
+  -ms-flex: 0 0 58.33333%;
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%; }
+
+/* line 641, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-offset-6 {
+  margin-left: 50%; }
+
+/* line 644, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-8 {
+  -ms-flex: 0 0 66.66667%;
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%; }
+
+/* line 650, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-offset-7 {
+  margin-left: 58.33333%; }
+
+/* line 653, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+/* line 659, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-offset-8 {
+  margin-left: 66.66667%; }
+
+/* line 662, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-10 {
+  -ms-flex: 0 0 83.33333%;
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%; }
+
+/* line 668, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-offset-9 {
+  margin-left: 75%; }
+
+/* line 671, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-11 {
+  -ms-flex: 0 0 91.66667%;
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%; }
+
+/* line 677, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-offset-10 {
+  margin-left: 83.33333%; }
+
+/* line 680, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+/* line 686, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-offset-11 {
+  margin-left: 91.66667%; }
+
+/* line 689, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-order-1 {
+  -ms-flex-order: 1;
+  order: 1; }
+
+/* line 694, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-order-2 {
+  -ms-flex-order: 2;
+  order: 2; }
+
+/* line 699, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-order-3 {
+  -ms-flex-order: 3;
+  order: 3; }
+
+/* line 704, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-order-4 {
+  -ms-flex-order: 4;
+  order: 4; }
+
+/* line 709, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-order-5 {
+  -ms-flex-order: 5;
+  order: 5; }
+
+/* line 714, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-order-6 {
+  -ms-flex-order: 6;
+  order: 6; }
+
+/* line 719, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-1 {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/* line 723, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-1 > .column, .small-up-1 > .columns {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+/* line 729, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-2 {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/* line 733, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-2 > .column, .small-up-2 > .columns {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+/* line 739, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-3 {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/* line 743, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-3 > .column, .small-up-3 > .columns {
+  -ms-flex: 0 0 33.33333%;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%; }
+
+/* line 749, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-4 {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/* line 753, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-4 > .column, .small-up-4 > .columns {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%; }
+
+/* line 759, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-5 {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/* line 763, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-5 > .column, .small-up-5 > .columns {
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%; }
+
+/* line 769, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-6 {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/* line 773, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-6 > .column, .small-up-6 > .columns {
+  -ms-flex: 0 0 16.66667%;
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%; }
+
+/* line 779, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-7 {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/* line 783, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-7 > .column, .small-up-7 > .columns {
+  -ms-flex: 0 0 14.28571%;
+  flex: 0 0 14.28571%;
+  max-width: 14.28571%; }
+
+/* line 789, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-8 {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/* line 793, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-up-8 > .column, .small-up-8 > .columns {
+  -ms-flex: 0 0 12.5%;
+  flex: 0 0 12.5%;
+  max-width: 12.5%; }
+
+/* line 799, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-collapse > .column, .small-collapse > .columns {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 803, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-uncollapse > .column, .small-uncollapse > .columns {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem; }
+
+@media screen and (min-width: 40em) {
+  /* line 808, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-1 {
+    -ms-flex: 0 0 8.33333%;
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
+  /* line 813, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-offset-0 {
+    margin-left: 0%; }
+  /* line 815, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-2 {
+    -ms-flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+  /* line 820, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-offset-1 {
+    margin-left: 8.33333%; }
+  /* line 822, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; }
+  /* line 827, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-offset-2 {
+    margin-left: 16.66667%; }
+  /* line 829, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-4 {
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
+  /* line 834, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-offset-3 {
+    margin-left: 25%; }
+  /* line 836, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-5 {
+    -ms-flex: 0 0 41.66667%;
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
+  /* line 841, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-offset-4 {
+    margin-left: 33.33333%; }
+  /* line 843, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  /* line 848, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-offset-5 {
+    margin-left: 41.66667%; }
+  /* line 850, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-7 {
+    -ms-flex: 0 0 58.33333%;
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
+  /* line 855, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-offset-6 {
+    margin-left: 50%; }
+  /* line 857, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-8 {
+    -ms-flex: 0 0 66.66667%;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
+  /* line 862, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-offset-7 {
+    margin-left: 58.33333%; }
+  /* line 864, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%; }
+  /* line 869, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-offset-8 {
+    margin-left: 66.66667%; }
+  /* line 871, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-10 {
+    -ms-flex: 0 0 83.33333%;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
+  /* line 876, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-offset-9 {
+    margin-left: 75%; }
+  /* line 878, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-11 {
+    -ms-flex: 0 0 91.66667%;
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
+  /* line 883, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-offset-10 {
+    margin-left: 83.33333%; }
+  /* line 885, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  /* line 890, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-offset-11 {
+    margin-left: 91.66667%; }
+  /* line 892, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-order-1 {
+    -ms-flex-order: 1;
+    order: 1; }
+  /* line 896, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-order-2 {
+    -ms-flex-order: 2;
+    order: 2; }
+  /* line 900, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-order-3 {
+    -ms-flex-order: 3;
+    order: 3; }
+  /* line 904, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-order-4 {
+    -ms-flex-order: 4;
+    order: 4; }
+  /* line 908, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-order-5 {
+    -ms-flex-order: 5;
+    order: 5; }
+  /* line 912, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-order-6 {
+    -ms-flex-order: 6;
+    order: 6; }
+  /* line 916, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-1 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 920, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-1 > .column, .medium-up-1 > .columns {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  /* line 925, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-2 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 929, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-2 > .column, .medium-up-2 > .columns {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  /* line 934, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-3 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 938, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-3 > .column, .medium-up-3 > .columns {
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
+  /* line 943, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-4 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 947, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-4 > .column, .medium-up-4 > .columns {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; }
+  /* line 952, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-5 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 956, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-5 > .column, .medium-up-5 > .columns {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%; }
+  /* line 961, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-6 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 965, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-6 > .column, .medium-up-6 > .columns {
+    -ms-flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+  /* line 970, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-7 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 974, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-7 > .column, .medium-up-7 > .columns {
+    -ms-flex: 0 0 14.28571%;
+    flex: 0 0 14.28571%;
+    max-width: 14.28571%; }
+  /* line 979, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-8 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 983, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-up-8 > .column, .medium-up-8 > .columns {
+    -ms-flex: 0 0 12.5%;
+    flex: 0 0 12.5%;
+    max-width: 12.5%; } }
+
+@media screen and (min-width: 40em) and (min-width: 40em) {
+  /* line 990, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-expand {
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0px; } }
+
+/* line 995, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.row.medium-unstack > .column, .row.medium-unstack > .columns {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%; }
+
+@media screen and (min-width: 40em) {
+  /* line 1000, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .row.medium-unstack > .column, .row.medium-unstack > .columns {
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0px; } }
+
+@media screen and (min-width: 40em) {
+  /* line 1006, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-collapse > .column, .medium-collapse > .columns {
+    padding-left: 0;
+    padding-right: 0; }
+  /* line 1009, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-uncollapse > .column, .medium-uncollapse > .columns {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem; } }
+
+@media screen and (min-width: 64em) {
+  /* line 1014, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-1 {
+    -ms-flex: 0 0 8.33333%;
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
+  /* line 1019, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-offset-0 {
+    margin-left: 0%; }
+  /* line 1021, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-2 {
+    -ms-flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+  /* line 1026, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-offset-1 {
+    margin-left: 8.33333%; }
+  /* line 1028, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; }
+  /* line 1033, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-offset-2 {
+    margin-left: 16.66667%; }
+  /* line 1035, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-4 {
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
+  /* line 1040, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-offset-3 {
+    margin-left: 25%; }
+  /* line 1042, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-5 {
+    -ms-flex: 0 0 41.66667%;
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
+  /* line 1047, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-offset-4 {
+    margin-left: 33.33333%; }
+  /* line 1049, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  /* line 1054, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-offset-5 {
+    margin-left: 41.66667%; }
+  /* line 1056, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-7 {
+    -ms-flex: 0 0 58.33333%;
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
+  /* line 1061, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-offset-6 {
+    margin-left: 50%; }
+  /* line 1063, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-8 {
+    -ms-flex: 0 0 66.66667%;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
+  /* line 1068, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-offset-7 {
+    margin-left: 58.33333%; }
+  /* line 1070, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%; }
+  /* line 1075, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-offset-8 {
+    margin-left: 66.66667%; }
+  /* line 1077, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-10 {
+    -ms-flex: 0 0 83.33333%;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
+  /* line 1082, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-offset-9 {
+    margin-left: 75%; }
+  /* line 1084, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-11 {
+    -ms-flex: 0 0 91.66667%;
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
+  /* line 1089, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-offset-10 {
+    margin-left: 83.33333%; }
+  /* line 1091, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  /* line 1096, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-offset-11 {
+    margin-left: 91.66667%; }
+  /* line 1098, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-order-1 {
+    -ms-flex-order: 1;
+    order: 1; }
+  /* line 1102, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-order-2 {
+    -ms-flex-order: 2;
+    order: 2; }
+  /* line 1106, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-order-3 {
+    -ms-flex-order: 3;
+    order: 3; }
+  /* line 1110, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-order-4 {
+    -ms-flex-order: 4;
+    order: 4; }
+  /* line 1114, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-order-5 {
+    -ms-flex-order: 5;
+    order: 5; }
+  /* line 1118, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-order-6 {
+    -ms-flex-order: 6;
+    order: 6; }
+  /* line 1122, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-1 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 1126, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-1 > .column, .large-up-1 > .columns {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  /* line 1131, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-2 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 1135, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-2 > .column, .large-up-2 > .columns {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  /* line 1140, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-3 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 1144, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-3 > .column, .large-up-3 > .columns {
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
+  /* line 1149, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-4 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 1153, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-4 > .column, .large-up-4 > .columns {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; }
+  /* line 1158, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-5 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 1162, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-5 > .column, .large-up-5 > .columns {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%; }
+  /* line 1167, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-6 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 1171, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-6 > .column, .large-up-6 > .columns {
+    -ms-flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+  /* line 1176, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-7 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 1180, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-7 > .column, .large-up-7 > .columns {
+    -ms-flex: 0 0 14.28571%;
+    flex: 0 0 14.28571%;
+    max-width: 14.28571%; }
+  /* line 1185, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-8 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  /* line 1189, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-up-8 > .column, .large-up-8 > .columns {
+    -ms-flex: 0 0 12.5%;
+    flex: 0 0 12.5%;
+    max-width: 12.5%; } }
+
+@media screen and (min-width: 64em) and (min-width: 64em) {
+  /* line 1196, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-expand {
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0px; } }
+
+/* line 1201, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.row.large-unstack > .column, .row.large-unstack > .columns {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%; }
+
+@media screen and (min-width: 64em) {
+  /* line 1206, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .row.large-unstack > .column, .row.large-unstack > .columns {
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0px; } }
+
+@media screen and (min-width: 64em) {
+  /* line 1212, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-collapse > .column, .large-collapse > .columns {
+    padding-left: 0;
+    padding-right: 0; }
+  /* line 1215, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-uncollapse > .column, .large-uncollapse > .columns {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem; } }
+
+/* line 1219, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.shrink {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  max-width: 100%; }
+
+/* line 1225, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.column.align-top, .align-top.columns {
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
+
+/* line 1230, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.column.align-bottom, .align-bottom.columns {
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
+
+/* line 1235, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.column.align-middle, .align-middle.columns {
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+/* line 1240, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.column.align-stretch, .align-stretch.columns {
+  -ms-flex-item-align: stretch;
+  align-self: stretch; }
+
+/* line 1245, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.align-right {
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+/* line 1250, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.align-center {
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+/* line 1255, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.align-justify {
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+/* line 1260, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.align-spaced {
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+/* line 1265, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.align-top {
+  -ms-flex-align: start;
+  -ms-grid-row-align: flex-start;
+  align-items: flex-start; }
+
+/* line 1270, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.align-self-top {
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
+
+/* line 1275, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.align-bottom {
+  -ms-flex-align: end;
+  -ms-grid-row-align: flex-end;
+  align-items: flex-end; }
+
+/* line 1280, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.align-self-bottom {
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
+
+/* line 1285, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.align-middle {
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center; }
+
+/* line 1290, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.align-self-middle {
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+/* line 1295, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.align-stretch {
+  -ms-flex-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-items: stretch; }
+
+/* line 1300, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.align-self-stretch {
+  -ms-flex-item-align: stretch;
+  align-self: stretch; }
+
+/* line 1305, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-order-1 {
+  -ms-flex-order: 1;
+  order: 1; }
+
+/* line 1310, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-order-2 {
+  -ms-flex-order: 2;
+  order: 2; }
+
+/* line 1315, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-order-3 {
+  -ms-flex-order: 3;
+  order: 3; }
+
+/* line 1320, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-order-4 {
+  -ms-flex-order: 4;
+  order: 4; }
+
+/* line 1325, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-order-5 {
+  -ms-flex-order: 5;
+  order: 5; }
+
+/* line 1330, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.small-order-6 {
+  -ms-flex-order: 6;
+  order: 6; }
+
+@media screen and (min-width: 40em) {
+  /* line 1336, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-order-1 {
+    -ms-flex-order: 1;
+    order: 1; }
+  /* line 1340, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-order-2 {
+    -ms-flex-order: 2;
+    order: 2; }
+  /* line 1344, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-order-3 {
+    -ms-flex-order: 3;
+    order: 3; }
+  /* line 1348, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-order-4 {
+    -ms-flex-order: 4;
+    order: 4; }
+  /* line 1352, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-order-5 {
+    -ms-flex-order: 5;
+    order: 5; }
+  /* line 1356, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .medium-order-6 {
+    -ms-flex-order: 6;
+    order: 6; } }
+
+@media screen and (min-width: 64em) {
+  /* line 1362, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-order-1 {
+    -ms-flex-order: 1;
+    order: 1; }
+  /* line 1366, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-order-2 {
+    -ms-flex-order: 2;
+    order: 2; }
+  /* line 1370, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-order-3 {
+    -ms-flex-order: 3;
+    order: 3; }
+  /* line 1374, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-order-4 {
+    -ms-flex-order: 4;
+    order: 4; }
+  /* line 1378, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-order-5 {
+    -ms-flex-order: 5;
+    order: 5; }
+  /* line 1382, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+  .large-order-6 {
+    -ms-flex-order: 6;
+    order: 6; } }
+
+/* line 1387, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-in-down.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateY(-100%);
+  transition-property: transform, opacity;
+  backface-visibility: hidden; }
+
+/* line 1398, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-in-down.mui-enter.mui-enter-active {
+  transform: translateY(0); }
+
+/* line 1403, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-in-left.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateX(-100%);
+  transition-property: transform, opacity;
+  backface-visibility: hidden; }
+
+/* line 1414, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-in-left.mui-enter.mui-enter-active {
+  transform: translateX(0); }
+
+/* line 1419, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-in-up.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateY(100%);
+  transition-property: transform, opacity;
+  backface-visibility: hidden; }
+
+/* line 1430, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-in-up.mui-enter.mui-enter-active {
+  transform: translateY(0); }
+
+/* line 1435, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-in-right.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateX(100%);
+  transition-property: transform, opacity;
+  backface-visibility: hidden; }
+
+/* line 1446, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-in-right.mui-enter.mui-enter-active {
+  transform: translateX(0); }
+
+/* line 1451, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-out-down.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateY(0);
+  transition-property: transform, opacity;
+  backface-visibility: hidden; }
+
+/* line 1462, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-out-down.mui-leave.mui-leave-active {
+  transform: translateY(100%); }
+
+/* line 1467, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-out-right.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateX(0);
+  transition-property: transform, opacity;
+  backface-visibility: hidden; }
+
+/* line 1478, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-out-right.mui-leave.mui-leave-active {
+  transform: translateX(100%); }
+
+/* line 1483, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-out-up.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateY(0);
+  transition-property: transform, opacity;
+  backface-visibility: hidden; }
+
+/* line 1494, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-out-up.mui-leave.mui-leave-active {
+  transform: translateY(-100%); }
+
+/* line 1499, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-out-left.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateX(0);
+  transition-property: transform, opacity;
+  backface-visibility: hidden; }
+
+/* line 1510, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slide-out-left.mui-leave.mui-leave-active {
+  transform: translateX(-100%); }
+
+/* line 1515, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.fade-in.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  opacity: 0;
+  transition-property: opacity; }
+
+/* line 1521, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.fade-in.mui-enter.mui-enter-active {
+  opacity: 1; }
+
+/* line 1524, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.fade-out.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  opacity: 1;
+  transition-property: opacity; }
+
+/* line 1530, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.fade-out.mui-leave.mui-leave-active {
+  opacity: 0; }
+
+/* line 1533, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-in-from-top.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotateX(-90deg);
+  transform-origin: top;
+  transition-property: transform, opacity;
+  opacity: 0; }
+
+/* line 1545, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-in-from-top.mui-enter.mui-enter-active {
+  transform: perspective(2000px) rotate(0deg);
+  opacity: 1; }
+
+/* line 1550, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-in-from-right.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotateY(-90deg);
+  transform-origin: right;
+  transition-property: transform, opacity;
+  opacity: 0; }
+
+/* line 1562, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-in-from-right.mui-enter.mui-enter-active {
+  transform: perspective(2000px) rotate(0deg);
+  opacity: 1; }
+
+/* line 1567, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-in-from-bottom.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotateX(90deg);
+  transform-origin: bottom;
+  transition-property: transform, opacity;
+  opacity: 0; }
+
+/* line 1579, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-in-from-bottom.mui-enter.mui-enter-active {
+  transform: perspective(2000px) rotate(0deg);
+  opacity: 1; }
+
+/* line 1584, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-in-from-left.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotateY(90deg);
+  transform-origin: left;
+  transition-property: transform, opacity;
+  opacity: 0; }
+
+/* line 1596, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-in-from-left.mui-enter.mui-enter-active {
+  transform: perspective(2000px) rotate(0deg);
+  opacity: 1; }
+
+/* line 1601, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-in-from-middle-x.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotateX(-90deg);
+  transform-origin: center;
+  transition-property: transform, opacity;
+  opacity: 0; }
+
+/* line 1613, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-in-from-middle-x.mui-enter.mui-enter-active {
+  transform: perspective(2000px) rotate(0deg);
+  opacity: 1; }
+
+/* line 1618, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-in-from-middle-y.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotateY(-90deg);
+  transform-origin: center;
+  transition-property: transform, opacity;
+  opacity: 0; }
+
+/* line 1630, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-in-from-middle-y.mui-enter.mui-enter-active {
+  transform: perspective(2000px) rotate(0deg);
+  opacity: 1; }
+
+/* line 1635, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-out-from-top.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotate(0deg);
+  transform-origin: top;
+  transition-property: transform, opacity;
+  opacity: 1; }
+
+/* line 1647, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-out-from-top.mui-leave.mui-leave-active {
+  transform: perspective(2000px) rotateX(-90deg);
+  opacity: 0; }
+
+/* line 1652, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-out-from-right.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotate(0deg);
+  transform-origin: right;
+  transition-property: transform, opacity;
+  opacity: 1; }
+
+/* line 1664, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-out-from-right.mui-leave.mui-leave-active {
+  transform: perspective(2000px) rotateY(-90deg);
+  opacity: 0; }
+
+/* line 1669, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-out-from-bottom.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotate(0deg);
+  transform-origin: bottom;
+  transition-property: transform, opacity;
+  opacity: 1; }
+
+/* line 1681, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-out-from-bottom.mui-leave.mui-leave-active {
+  transform: perspective(2000px) rotateX(90deg);
+  opacity: 0; }
+
+/* line 1686, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-out-from-left.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotate(0deg);
+  transform-origin: left;
+  transition-property: transform, opacity;
+  opacity: 1; }
+
+/* line 1698, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-out-from-left.mui-leave.mui-leave-active {
+  transform: perspective(2000px) rotateY(90deg);
+  opacity: 0; }
+
+/* line 1703, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-out-from-middle-x.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotate(0deg);
+  transform-origin: center;
+  transition-property: transform, opacity;
+  opacity: 1; }
+
+/* line 1715, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-out-from-middle-x.mui-leave.mui-leave-active {
+  transform: perspective(2000px) rotateX(-90deg);
+  opacity: 0; }
+
+/* line 1720, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-out-from-middle-y.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotate(0deg);
+  transform-origin: center;
+  transition-property: transform, opacity;
+  opacity: 1; }
+
+/* line 1732, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.hinge-out-from-middle-y.mui-leave.mui-leave-active {
+  transform: perspective(2000px) rotateY(-90deg);
+  opacity: 0; }
+
+/* line 1737, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.scale-in-up.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: scale(0.5);
+  transition-property: transform, opacity;
+  opacity: 0; }
+
+/* line 1747, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.scale-in-up.mui-enter.mui-enter-active {
+  transform: scale(1);
+  opacity: 1; }
+
+/* line 1753, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.scale-in-down.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: scale(1.5);
+  transition-property: transform, opacity;
+  opacity: 0; }
+
+/* line 1763, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.scale-in-down.mui-enter.mui-enter-active {
+  transform: scale(1);
+  opacity: 1; }
+
+/* line 1769, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.scale-out-up.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: scale(1);
+  transition-property: transform, opacity;
+  opacity: 1; }
+
+/* line 1779, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.scale-out-up.mui-leave.mui-leave-active {
+  transform: scale(1.5);
+  opacity: 0; }
+
+/* line 1785, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.scale-out-down.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: scale(1);
+  transition-property: transform, opacity;
+  opacity: 1; }
+
+/* line 1795, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.scale-out-down.mui-leave.mui-leave-active {
+  transform: scale(0.5);
+  opacity: 0; }
+
+/* line 1801, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.spin-in.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: rotate(-0.75turn);
+  transition-property: transform, opacity;
+  opacity: 0; }
+
+/* line 1811, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.spin-in.mui-enter.mui-enter-active {
+  transform: rotate(0);
+  opacity: 1; }
+
+/* line 1817, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.spin-out.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: rotate(0);
+  transition-property: transform, opacity;
+  opacity: 1; }
+
+/* line 1827, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.spin-out.mui-leave.mui-leave-active {
+  transform: rotate(0.75turn);
+  opacity: 0; }
+
+/* line 1833, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.spin-in-ccw.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: rotate(0.75turn);
+  transition-property: transform, opacity;
+  opacity: 0; }
+
+/* line 1843, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.spin-in-ccw.mui-enter.mui-enter-active {
+  transform: rotate(0);
+  opacity: 1; }
+
+/* line 1849, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.spin-out-ccw.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: rotate(0);
+  transition-property: transform, opacity;
+  opacity: 1; }
+
+/* line 1859, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.spin-out-ccw.mui-leave.mui-leave-active {
+  transform: rotate(-0.75turn);
+  opacity: 0; }
+
+/* line 1865, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slow {
+  transition-duration: 750ms !important; }
+
+/* line 1868, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.fast {
+  transition-duration: 250ms !important; }
+
+/* line 1871, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.linear {
+  transition-timing-function: linear !important; }
+
+/* line 1874, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.ease {
+  transition-timing-function: ease !important; }
+
+/* line 1877, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.ease-in {
+  transition-timing-function: ease-in !important; }
+
+/* line 1880, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.ease-out {
+  transition-timing-function: ease-out !important; }
+
+/* line 1883, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.ease-in-out {
+  transition-timing-function: ease-in-out !important; }
+
+/* line 1886, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.bounce-in {
+  transition-timing-function: cubic-bezier(0.485, 0.155, 0.24, 1.245) !important; }
+
+/* line 1889, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.bounce-out {
+  transition-timing-function: cubic-bezier(0.485, 0.155, 0.515, 0.845) !important; }
+
+/* line 1892, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.bounce-in-out {
+  transition-timing-function: cubic-bezier(0.76, -0.245, 0.24, 1.245) !important; }
+
+/* line 1895, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.short-delay {
+  transition-delay: 300ms !important; }
+
+/* line 1898, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.long-delay {
+  transition-delay: 700ms !important; }
+
+/* line 1901, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.shake {
+  animation-name: shake-7; }
+
+@keyframes shake-7 {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
+    transform: translateX(7%); }
+  5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
+    transform: translateX(-7%); } }
+
+/* line 1921, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.spin-cw {
+  animation-name: spin-cw-1turn; }
+
+@keyframes spin-cw-1turn {
+  0% {
+    transform: rotate(-1turn); }
+  100% {
+    transform: rotate(0); } }
+
+/* line 1941, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.spin-ccw {
+  animation-name: spin-cw-1turn; }
+
+@keyframes spin-cw-1turn {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(1turn); } }
+
+/* line 1953, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.wiggle {
+  animation-name: wiggle-7deg; }
+
+@keyframes wiggle-7deg {
+  40%, 50%, 60% {
+    transform: rotate(7deg); }
+  35%, 45%, 55%, 65% {
+    transform: rotate(-7deg); }
+  0%, 30%, 70%, 100% {
+    transform: rotate(0); } }
+
+/* line 1979, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.shake,
+.spin-cw,
+.spin-ccw,
+.wiggle {
+  animation-duration: 500ms; }
+
+/* line 1986, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.infinite {
+  animation-iteration-count: infinite; }
+
+/* line 1990, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.slow {
+  animation-duration: 750ms !important; }
+
+/* line 1994, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.fast {
+  animation-duration: 250ms !important; }
+
+/* line 1998, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.linear {
+  animation-timing-function: linear !important; }
+
+/* line 2002, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.ease {
+  animation-timing-function: ease !important; }
+
+/* line 2006, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.ease-in {
+  animation-timing-function: ease-in !important; }
+
+/* line 2010, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.ease-out {
+  animation-timing-function: ease-out !important; }
+
+/* line 2014, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.ease-in-out {
+  animation-timing-function: ease-in-out !important; }
+
+/* line 2018, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.bounce-in {
+  animation-timing-function: cubic-bezier(0.485, 0.155, 0.24, 1.245) !important; }
+
+/* line 2022, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.bounce-out {
+  animation-timing-function: cubic-bezier(0.485, 0.155, 0.515, 0.845) !important; }
+
+/* line 2026, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.bounce-in-out {
+  animation-timing-function: cubic-bezier(0.76, -0.245, 0.24, 1.245) !important; }
+
+/* line 2030, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.short-delay {
+  animation-delay: 300ms !important; }
+
+/* line 2034, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/vendor/foundation/foundation.css */
+.long-delay {
+  animation-delay: 700ms !important; }
+
+/* ================ Fonts ================= */
+@font-face {
+  font-family: 'Futura';
+  src: url("../fonts/FuturaStd-Light.otf");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura';
+  src: url("../fonts/FuturaStd-Medium.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura';
+  src: url("../fonts/FuturaStd-Bold.otf");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura';
+  src: url("../fonts/FuturaStd-MediumOblique.otf");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Futura';
+  src: url("../fonts/FuturaStd-Heavy.ttf");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'FuturaCondensed';
+  src: url("../fonts/FuturaStd-Condensed.otf");
+  font-weight: bold;
+  font-style: normal; }
+
+/* line 1, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/base.scss */
+html {
+  font-size: 16px; }
+
+/* line 5, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/base.scss */
+body {
+  font-family: "Futura", Helvetica, Arial, sans-serif; }
+
+@media (min-width: 600px) {
+  /* line 10, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/base.scss */
+  html {
+    font-size: 16px; } }
+
+@media (min-width: 960px) {
+  /* line 16, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/base.scss */
+  html {
+    font-size: 18px; } }
+
+/* line 1, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/type.scss */
+.font--color-primary {
+  color: #4BC1BA; }
+
+/* line 5, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/type.scss */
+.font--color-secondary {
+  color: #C14D4D; }
+
+/* line 1, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/navigation.scss */
+.navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem .7rem;
+  background-color: #263238;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24); }
+
+/* line 10, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/navigation.scss */
+.navigation--links {
+  position: relative; }
+
+/* line 14, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/navigation.scss */
+.navigation--link {
+  position: relative;
+  margin: 0 .2rem;
+  padding: 0 5px 5px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s ease; }
+  /* line 23, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/navigation.scss */
+  .navigation--link:before, .navigation--link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #4BC1BA; }
+  /* line 36, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/navigation.scss */
+  .navigation--link:before {
+    bottom: 3px;
+    transition: width .5s ease; }
+  /* line 42, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/navigation.scss */
+  .navigation--link:after {
+    background-color: #C14D4D;
+    transition: width .3s ease; }
+  /* line 49, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/navigation.scss */
+  .navigation--link:hover:before, .navigation--link:hover:after, .navigation--link.active:before, .navigation--link.active:after {
+    width: 100%; }
+
+/* line 55, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/navigation.scss */
+.logo {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: -3px;
+  text-decoration: none; }
+
+@media (min-width: 960px) {
+  /* line 68, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/navigation.scss */
+  .logo {
+    font-size: 3rem;
+    line-height: 3rem; }
+  /* line 73, /Users/sarah.cleveland/Documents/MRM/_Repos/portfolio/src/sass/partials/navigation.scss */
+  .navigation--link {
+    margin: 0 1rem; } }
+
+/*# sourceMappingURL=../../sass */

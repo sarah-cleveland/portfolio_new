@@ -1,0 +1,12 @@
+<div *ngIf="project">
+	<div>
+		{{project.title}}
+		<p>{{project.content}}</p>
+	</div>
+
+	<div class="">
+		<img src="app/assets/images/{{project.desktop}}" alt="{{project.name}}">
+		<img src="app/assets/images/{{project.tablet}}" alt="{{project.name}}">
+		<img src="app/assets/images/{{project.mobile}}" alt="{{project.name}}">
+	</div>
+</div>

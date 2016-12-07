@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/WEB222">
+    <title>Sarah Cleveland Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="./node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="./node_modules/zone.js/dist/zone.js"></script>
+    <script src="./node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="./node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="./systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+    <my-app>
+      <div class="loader">
+        <div class="sk-folding-cube">
+          <div class="sk-cube1 sk-cube"></div>
+          <div class="sk-cube2 sk-cube"></div>
+          <div class="sk-cube4 sk-cube"></div>
+          <div class="sk-cube3 sk-cube"></div>
+        </div>
+      </div>
+    </my-app>
+  </body>
+</html>
